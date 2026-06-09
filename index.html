@@ -13,9 +13,9 @@
       --surface:   #07070C;
       --border:    #0E0E16;
       --border-hi: #1A1A26;
-      --text:      #D0CDDE;
-      --muted:     #3C3A52;
-      --accent:    #AEABCC;
+      --text:      #E6E5F7;
+      --muted:     #585679;
+      --accent:    #D2CFFF;
       --ff-d: 'Space Grotesk', sans-serif;
       --ff-m: 'JetBrains Mono', monospace;
     }
@@ -101,9 +101,9 @@
       opacity: 0; animation: up 0.7s 0.55s ease forwards;
     }
     .hero-cta a {
-      font-family: var(--ff-m); font-size: 10px;
+      font-family: var(--ff-m); font-size: 12px;
       letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--muted); text-decoration: none;
+      color: var(--accent); text-decoration: none;
       border-bottom: 1px solid var(--border-hi); padding-bottom: 3px;
       transition: color 0.2s, border-color 0.2s;
     }
@@ -115,10 +115,10 @@
     .hero { border-top: none !important; }
     .projects-subtitle {
       font-family: var(--ff-m);
-      font-size: 12px;
+      font-size: 16px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--accent);
       margin-top: -1.75rem;
       margin-bottom: 2.5rem;
     }
@@ -157,13 +157,13 @@
     .card:hover { background: var(--surface); }
     .card:hover::before { transform: scaleY(1); }
     .card-title {
-      font-size: 1rem; font-weight: 400;
+      font-size: 1.5rem; font-weight: 400;
       line-height: 1.3; margin-bottom: 0.55rem;
       letter-spacing: 0.02em;
       text-transform: uppercase;
     }
     .card-desc {
-      font-size: 0.86rem; color: var(--muted); line-height: 1.7;
+      font-size: 0.96rem; color: var(--muted); line-height: 1.7;
     }
     .card-arrow {
       position: absolute; bottom: 1.5rem; right: 1.75rem;
@@ -232,8 +232,6 @@
 </head>
 <body>
 
-
-
   <main>
     <div class="wrap">
 
@@ -257,23 +255,23 @@
         <p class="projects-subtitle">In Development</p>
         <div class="projects-grid">
           <a class="card" href="https://withvoidwithin.github.io/dota2_modding/" target="_blank" rel="noopener" tabindex="0">
-            <h2 class="card-title">dota2_modding</h2>
-            <p class="card-desc">Modding reference for Dota 2 — game dumps, API, and documentation. An open alternative to moddota.</p>
+            <h2 class="card-title">dota2 modding</h2>
+            <p class="card-desc">Modding reference for Dota 2 — game dumps, API, and documentation.</p>
             <span class="card-arrow">&#x2197;</span>
           </a>
           <a class="card" href="https://withvoidwithin.github.io/hexed_path_info/" target="_blank" rel="noopener" tabindex="0">
-            <h2 class="card-title">Hexed Path</h2>
+            <h2 class="card-title">HEXED PATH</h2>
             <p class="card-desc">A cooperative PvE dark fantasy RPG built as a custom game mode for Dota 2.</p>
             <span class="card-arrow">&#x2197;</span>
           </a>
-          <a class="card" href="https://github.com/withvoidwithin/dota2_dev_core_panorama" target="_blank" rel="noopener" tabindex="0">
-            <h2 class="card-title">dev_core_panorama</h2>
-            <p class="card-desc">Core UI framework for Dota 2 custom games built on Panorama.</p>
+          <a class="card" href="https://github.com/withvoidwithin/dota2_dev_core_vscripts" target="_blank" rel="noopener" tabindex="0">
+            <h2 class="card-title">dota2 core vscripts</h2>
+            <p class="card-desc">Custom VScripts utility functions for Dota 2 custom game development.</p>
             <span class="card-arrow">&#x2197;</span>
           </a>
-          <a class="card" href="https://github.com/withvoidwithin/dota2_dev_core_vscripts" target="_blank" rel="noopener" tabindex="0">
-            <h2 class="card-title">dev_core_vscripts</h2>
-            <p class="card-desc">Server-side scripting core for Dota 2 custom game development.</p>
+          <a class="card" href="https://github.com/withvoidwithin/dota2_dev_core_panorama" target="_blank" rel="noopener" tabindex="0">
+            <h2 class="card-title">dota2 core panorama</h2>
+            <p class="card-desc">Custom Panorama utility functions for Dota 2 custom game development.</p>
             <span class="card-arrow">&#x2197;</span>
           </a>
         </div>
