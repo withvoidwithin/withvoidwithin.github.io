@@ -28,7 +28,7 @@
                     <div class="hero-cta">
                         <a href="#projects">View projects &#x2193;</a>
                         <a href="https://github.com/withvoidwithin" target="_blank" rel="noopener">GitHub &#x2197;</a>
-                        <a href="https://boosty.to/withvoidwithin" target="_blank" rel="noopener">Support &#x2197;</a>
+                        <a href="#support" class="js-support-open">Support &#x2197;</a>
                     </div>
                 </div>
             </section>
@@ -65,7 +65,6 @@
                 </div>
             </section>
 
-
         </div>
     </main>
 
@@ -76,11 +75,156 @@
                 <nav class="footer-links">
                     <a href="https://github.com/withvoidwithin" target="_blank" rel="noopener">GitHub</a>
                     <a href="mailto:withvoidwithin@gmail.com">Contact</a>
-                    <a href="https://boosty.to/withvoidwithin" target="_blank" rel="noopener">Support</a>
+                    <a href="#support" class="js-support-open">Support</a>
                 </nav>
             </div>
         </div>
     </footer>
+
+    <!-- SUPPORT POPUP -->
+    <div class="support-overlay" id="support-overlay" role="dialog" aria-modal="true" aria-label="Support">
+        <div class="support-popup">
+            <button class="support-close" aria-label="Close" id="support-close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
+
+            <p class="support-label">SUPPORT</p>
+            <h2 class="support-title">My works</h2>
+            <p class="support-desc">Creation is all I do. If it brought you value — any support keeps it alive.</p>
+
+            <a class="support-boosty" href="https://boosty.to/withvoidwithin" target="_blank" rel="noopener">
+                Boosty &#x2197;
+            </a>
+
+            <div class="support-crypto-block">
+                <p class="support-crypto-label">CRYPTO / USDT</p>
+                <table class="support-table">
+                    <tbody>
+                        <tr>
+                            <td class="crypto-network">TON</td>
+                            <td class="crypto-addr">
+                                <span class="addr-text">UQAi_DS6024NmisKGPeLr4ff8vpX-ax16AQeUGoD3do8U5OJ</span>
+                            </td>
+                            <td class="crypto-copy">
+                                <button class="copy-btn" data-addr="UQAi_DS6024NmisKGPeLr4ff8vpX-ax16AQeUGoD3do8U5OJ" aria-label="Copy TON address">
+                                    <svg class="copy-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="5" y="5" width="8" height="9" rx="1" stroke="currentColor" stroke-width="1.25"/>
+                                        <path d="M3 11V3a1 1 0 0 1 1-1h7" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                                    </svg>
+                                    <svg class="check-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="crypto-network">TRON</td>
+                            <td class="crypto-addr">
+                                <span class="addr-text">TS76gP7mrSXCMy8oUwKLhHkkyoeVe8dxCG</span>
+                            </td>
+                            <td class="crypto-copy">
+                                <button class="copy-btn" data-addr="TS76gP7mrSXCMy8oUwKLhHkkyoeVe8dxCG" aria-label="Copy TRON address">
+                                    <svg class="copy-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="5" y="5" width="8" height="9" rx="1" stroke="currentColor" stroke-width="1.25"/>
+                                        <path d="M3 11V3a1 1 0 0 1 1-1h7" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                                    </svg>
+                                    <svg class="check-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="crypto-network">ERC-20</td>
+                            <td class="crypto-addr">
+                                <span class="addr-text">0xc9D33095CB9F60BA2951DF7056A43B2E3FaB6670</span>
+                            </td>
+                            <td class="crypto-copy">
+                                <button class="copy-btn" data-addr="0xc9D33095CB9F60BA2951DF7056A43B2E3FaB6670" aria-label="Copy ERC-20 address">
+                                    <svg class="copy-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="5" y="5" width="8" height="9" rx="1" stroke="currentColor" stroke-width="1.25"/>
+                                        <path d="M3 11V3a1 1 0 0 1 1-1h7" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                                    </svg>
+                                    <svg class="check-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const overlay  = document.getElementById('support-overlay');
+        const closeBtn = document.getElementById('support-close');
+
+        function openSupport() {
+            overlay.classList.add('is-open');
+            document.body.classList.add('popup-open');
+            history.replaceState(null, '', '#support');
+        }
+
+        function closeSupport() {
+            overlay.classList.remove('is-open');
+            document.body.classList.remove('popup-open');
+            history.replaceState(null, '', window.location.pathname);
+        }
+
+        // Open via links
+        document.querySelectorAll('.js-support-open').forEach(el => {
+            el.addEventListener('click', e => {
+                e.preventDefault();
+                openSupport();
+            });
+        });
+
+        // Close via button
+        closeBtn.addEventListener('click', closeSupport);
+
+        // Close on overlay click (outside popup)
+        overlay.addEventListener('click', e => {
+            if (e.target === overlay) closeSupport();
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeSupport();
+        });
+
+        // Direct link: open if hash is #support on load
+        if (window.location.hash === '#support') {
+            openSupport();
+        }
+
+        // Copy to clipboard
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const addr = btn.dataset.addr;
+                try {
+                    await navigator.clipboard.writeText(addr);
+                    btn.classList.add('copied');
+                    setTimeout(() => btn.classList.remove('copied'), 1800);
+                } catch {
+                    // fallback
+                    const ta = document.createElement('textarea');
+                    ta.value = addr;
+                    ta.style.position = 'fixed';
+                    ta.style.opacity = '0';
+                    document.body.appendChild(ta);
+                    ta.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(ta);
+                    btn.classList.add('copied');
+                    setTimeout(() => btn.classList.remove('copied'), 1800);
+                }
+            });
+        });
+    </script>
 
 </body>
 

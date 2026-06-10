@@ -281,7 +281,7 @@ footer {
 
 .footer-copy {
     font-family: var(--ff-m);
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.12em;
     color: var(--muted);
 }
@@ -293,12 +293,13 @@ footer {
 
 .footer-links a {
     font-family: var(--ff-m);
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
     text-decoration: none;
     transition: color 0.2s;
+    cursor: pointer;
 }
 
 .footer-links a:hover {
@@ -328,6 +329,224 @@ footer {
     }
 }
 
+/* ─── SUPPORT POPUP ─────────────────────────────────────────────────────────── */
+
+body.popup-open {
+    overflow: hidden;
+}
+
+.support-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: rgba(2, 2, 4, 0.65);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.support-overlay.is-open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.support-popup {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border-hi);
+    width: 100%;
+    max-width: 600px;
+    padding: 2.5rem 2.5rem 2.25rem;
+    transform: translateY(10px);
+    transition: transform 0.28s ease;
+}
+
+.support-overlay.is-open .support-popup {
+    transform: translateY(0);
+}
+
+/* Close button */
+.support-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: none;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    padding: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.support-close:hover {
+    color: var(--text);
+}
+
+/* Label */
+.support-label {
+    font-family: var(--ff-m);
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+/* Title */
+.support-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.85rem;
+}
+
+/* Desc */
+.support-desc {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    max-width: 440px;
+    letter-spacing: 0.1em;
+}
+
+/* Boosty link */
+.support-boosty {
+    display: inline-block;
+    font-family: var(--ff-m);
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-hi);
+    padding-bottom: 3px;
+    margin-bottom: 2rem;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.support-boosty:hover {
+    color: var(--text);
+    border-color: var(--accent);
+}
+
+/* Crypto section */
+.support-crypto-block {
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+}
+
+.support-crypto-label {
+    font-family: var(--ff-m);
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+/* Table */
+.support-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border-hi);
+}
+
+.support-table tr {
+    border-bottom: 1px solid var(--border);
+}
+
+.support-table tr:last-child {
+    border-bottom: none;
+}
+
+.support-table td {
+    padding: 0.7rem 0.85rem;
+    vertical-align: middle;
+}
+
+.crypto-network {
+    font-family: var(--ff-m);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 4.5rem;
+    border-right: 1px solid var(--border);
+}
+
+.crypto-addr {
+    width: 100%;
+}
+
+.addr-text {
+    font-family: var(--ff-m);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    word-break: break-all;
+    opacity: 0.75;
+}
+
+.crypto-copy {
+    white-space: nowrap;
+    width: 2.5rem;
+    text-align: center;
+    border-left: 1px solid var(--border);
+}
+
+/* Copy button */
+.copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--muted);
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+    width: 28px;
+    height: 28px;
+}
+
+.copy-btn:hover {
+    color: var(--accent);
+}
+
+.copy-btn svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.copy-btn .check-icon {
+    display: none;
+}
+
+.copy-btn.copied .copy-icon {
+    display: none;
+}
+
+.copy-btn.copied .check-icon {
+    display: block;
+}
+
+.copy-btn.copied {
+    color: #7EE8A2;
+}
+
+/* ─── RESPONSIVE ────────────────────────────────────────────────────────────── */
+
 @media (max-width: 640px) {
     .projects-grid {
         grid-template-columns: 1fr;
@@ -347,6 +566,14 @@ footer {
     .about-row {
         flex-direction: column;
         gap: 1.5rem;
+    }
+
+    .support-popup {
+        padding: 2rem 1.5rem 1.75rem;
+    }
+
+    .addr-text {
+        font-size: 9.5px;
     }
 }
 
